@@ -135,7 +135,7 @@ const Dashboard = () => {
                                         </TableCell>
                                         <TableCell align="center">{row.message}</TableCell>
                                         <TableCell align="center">{row.department_id.departmentName}</TableCell>
-                                        <TableCell align="center"><img src={`${process.env.REACT_APP_BASE_URL}${row?.image}`} alt="Avatar" /></TableCell>
+                                        <TableCell align="center"><img src={`${process.env.REACT_APP_BASE_URL}${row?.doctor_id?.image}`} alt="Avatar" style={{height:'50px'}} /></TableCell>
                                         <TableCell align="center">{row.doctor_id.name}</TableCell>
                                         <TableCell align="center">{`${row?.doctor_id?.aperture_time} - ${row?.doctor_id?.departure_time}`}</TableCell>
                                         <TableCell align="center">
